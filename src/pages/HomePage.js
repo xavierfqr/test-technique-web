@@ -1,21 +1,22 @@
 import React from 'react'
-import { database } from '../firebase';
 import { useSelector } from 'react-redux';
-
+import EquipmentList from '../components/EquipmentList';
 
 
 function HomePage() {
-    const [data, setData] = React.useState()
 
-    const {loading, equipments, error} = useSelector(state => state.equipmentsReducer)
+    const {loading, error} = useSelector(state => state.equipmentsReducer)
     
-    console.log(equipments['-LHXpVfII4J53rgKtuAi'])
-    console.log(loading)
-    console.log(error)
+
     return (
         <div>
-            {loading}
-            {error}
+            {loading ? 
+            <div>Loading...</div>
+            :
+            error ? 
+                <div>an error occured while fetching data</div>
+                :
+                <EquipmentList></EquipmentList>}
         </div>
     )
 }
