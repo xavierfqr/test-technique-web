@@ -1,6 +1,5 @@
 import {FETCH_EQUIPMENTS_REQUEST, FETCH_EQUIPMENTS_SUCCESS, FETCH_EQUIPMENTS_FAILURE} from '../actions/equipmentsActions';
 
-//state = { loading: true, data:[]}
 const initialState = { loading: true, equipments:[], error: ''}
 
 export const equipmentsReducer = (state = initialState, action) => {

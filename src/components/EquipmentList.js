@@ -1,6 +1,7 @@
 import React from 'react'
 import { useSelector } from 'react-redux';
 import EquipmentCard from './EquipmentCard';
+import styles from './EquipmentList.module.css'
 
 
 function EquipmentList() {
@@ -13,8 +14,9 @@ function EquipmentList() {
         const {name, domain, nbFaults, photo} = equipments[key]
         return <EquipmentCard key={key} id={key} name={name} domain={domain} nbFaults={nbFaults} photo={photo}></EquipmentCard>
     })
+
     return (
-        <div>
+        <div className={styles.container}>
             {equipmentList}
         </div>
     )

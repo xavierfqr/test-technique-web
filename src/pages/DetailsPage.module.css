@@ -32,6 +32,7 @@ section > header {
   display: flex;
   flex-direction: column;
   align-self: flex-start;
+  text-align: left;
   margin-right: 2rem;
 }
 

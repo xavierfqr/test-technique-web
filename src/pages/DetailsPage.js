@@ -10,7 +10,9 @@ function EquipmentPage() {
     const {id} = useParams();
     const equipment = useSelector(state => state.equipmentsReducer.equipments[id]);
 
+
     React.useEffect(() => {
+        window.scrollTo(0, 0);
         async function fetchCheckpoints() {
             const dbRef = database.ref();
             const snapshot = await dbRef.child('Checkpoints').get()
