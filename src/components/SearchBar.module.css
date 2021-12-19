@@ -1,0 +1,27 @@
+.container {
+  margin: 1rem 0 3rem 0;
+}
+
+.container > input {
+  border: none;
+  outline: none;
+  border-bottom: 1px solid black;
+  margin-right: 1rem;
+}
+
+.container > input::placeholder {
+  font-style: italic;
+}
+
+option {
+  outline: none;
+  border: none;
+}
+
+.container button {
+  cursor: pointer;
+  border: none;
+  background-color: #aaa;
+  padding: 0.3rem;
+  border-radius: 10px;
+}

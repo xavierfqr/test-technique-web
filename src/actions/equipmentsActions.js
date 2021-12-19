@@ -3,6 +3,7 @@ import { database } from '../firebase';
 export const FETCH_EQUIPMENTS_REQUEST = "FETCH_EQUIPMENTS_REQUEST";
 export const FETCH_EQUIPMENTS_SUCCESS = "FETCH_EQUIPMENTS_SUCCESS";
 export const FETCH_EQUIPMENTS_FAILURE = "FETCH_EQUIPMENTS_FAILURE";
+export const FILTER_EQUIPMENTS = "FILTER_EQUIPMENTS";
 
 
 export const fetchEquipments = () => async (dispatch) => {
@@ -22,5 +23,15 @@ export const fetchEquipments = () => async (dispatch) => {
             type: FETCH_EQUIPMENTS_FAILURE,
             payload: error.message
         })
+    }
+}
+
+export const filterEquipments = (filterOption, filterValue) => {
+    return {
+        type: FILTER_EQUIPMENTS,
+        payload: {
+            filterOption,
+            filterValue
+        }
     }
 }

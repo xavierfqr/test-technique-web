@@ -1,4 +1,4 @@
-import {FETCH_EQUIPMENTS_REQUEST, FETCH_EQUIPMENTS_SUCCESS, FETCH_EQUIPMENTS_FAILURE} from '../actions/equipmentsActions';
+import {FETCH_EQUIPMENTS_REQUEST, FETCH_EQUIPMENTS_SUCCESS, FETCH_EQUIPMENTS_FAILURE, FILTER_EQUIPMENTS} from '../actions/equipmentsActions';
 
 const initialState = { loading: true, equipments:[], error: ''}
 
@@ -20,6 +20,12 @@ export const equipmentsReducer = (state = initialState, action) => {
                 loading: false,
                 equipments: [],
                 error: action.payload
+            }
+        case FILTER_EQUIPMENTS:
+            return {
+                ...state,
+                filterOption: action.payload.filterOption,
+                filterValue: action.payload.filterValue
             }
         default:
             return state;

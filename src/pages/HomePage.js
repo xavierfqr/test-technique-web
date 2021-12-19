@@ -1,6 +1,7 @@
 import React from 'react'
 import { useSelector } from 'react-redux';
 import EquipmentList from '../components/EquipmentList';
+import SearchBar from '../components/SearchBar';
 
 
 function HomePage() {
@@ -15,7 +16,11 @@ function HomePage() {
             error ? 
                 <div>An error occured while fetching data</div>
                 :
-                <EquipmentList></EquipmentList>}
+                <div>
+                    <SearchBar/>
+                    <EquipmentList></EquipmentList>
+                </div>
+                }
         </div>
     )
 }
