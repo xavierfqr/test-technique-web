@@ -15,15 +15,21 @@
   font-style: italic;
 }
 
-option {
+.container > select {
   outline: none;
   border: none;
+  padding: 3px;
+  margin-right: 1rem;
 }
 
 .container button {
   cursor: pointer;
   border: none;
   background-color: #aaa;
-  padding: 0.3rem;
+  padding: 0.4rem;
   border-radius: 10px;
+  transition: 0.3s;
+}
+.container button:hover {
+  transform: translate(0, -2px);
 }
