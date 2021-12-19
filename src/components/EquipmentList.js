@@ -23,7 +23,7 @@ function EquipmentList() {
             default:
                 shouldDisplay = true;
         }
-        if (!shouldDisplay) return;
+        if (!shouldDisplay) return null;
         
         return <EquipmentCard key={key} id={key} name={name} domain={domain} nbFaults={nbFaults} photo={photo}></EquipmentCard>
     })

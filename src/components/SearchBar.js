@@ -16,8 +16,7 @@ function SearchBar() {
 
     return (
         <form onClick={handleForm} className={styles.container}>
-            <input onChange={(event) => setInput(event.target.value)} type="text" placeholder='Rechercher un item'>
-            </input>
+            <input onChange={(event) => setInput(event.target.value)} type="text" placeholder='Rechercher un item'/>
             <select onChange={(event) => setOption(event.target.value)}>
                 <option value="name">nom</option>
                 <option value="domain">domaine</option>

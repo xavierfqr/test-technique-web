@@ -7,7 +7,7 @@ function EquipmentCard({id, name, domain, nbFaults, photo}) {
     return (
         <Link to={`${id}`} className={styles.container}>
             <figure className={styles.img}>
-                <img src={photo}/>
+                <img alt="equipement" src={photo}/>
             </figure>
             <div className={styles.details}>
                 <p className={styles.name}>{name}</p>

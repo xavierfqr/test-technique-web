@@ -1,6 +1,6 @@
 import {FETCH_EQUIPMENTS_REQUEST, FETCH_EQUIPMENTS_SUCCESS, FETCH_EQUIPMENTS_FAILURE, FILTER_EQUIPMENTS} from '../actions/equipmentsActions';
 
-const initialState = { loading: true, equipments:[], error: ''}
+const initialState = { loading: true, equipments:[], error: '', filterOption: '', optionValue: ''}
 
 export const equipmentsReducer = (state = initialState, action) => {
     switch(action.type){

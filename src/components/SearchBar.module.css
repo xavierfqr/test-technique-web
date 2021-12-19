@@ -7,6 +7,8 @@
   outline: none;
   border-bottom: 1px solid black;
   margin-right: 1rem;
+  padding: 3px;
+  width: 20%;
 }
 
 .container > input::placeholder {
