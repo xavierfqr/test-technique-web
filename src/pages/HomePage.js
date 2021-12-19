@@ -7,7 +7,6 @@ function HomePage() {
 
     const {loading, error} = useSelector(state => state.equipmentsReducer)
     
-
     return (
         <div>
             {loading ? 
