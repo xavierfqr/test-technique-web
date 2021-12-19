@@ -1,0 +1,57 @@
+.container {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2rem;
+}
+
+section {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  border: 3px solid #dfdff1;
+  border-radius: 5px;
+  margin-bottom: 2rem;
+}
+
+section > header {
+  font-size: 1.5rem;
+  font-style: italic;
+  text-decoration: underline;
+  text-align: left;
+  margin: 1rem;
+}
+
+.infos {
+  display: flex;
+  width: fit-content;
+  padding: 1rem;
+}
+
+.infos :first-child {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+  margin-right: 2rem;
+}
+
+.infos > img {
+  align-self: flex-end;
+  border-radius: 10px;
+}
+
+.characteristics > tr > td:first-child {
+  border-right: 1px solid #eee;
+  font-weight: 900;
+}
+
+tbody {
+  text-align: left;
+}
+
+td {
+  padding-right: 2rem;
+  padding-left: 1rem;
+  padding-bottom: 0.5rem;
+  padding-top: 0.5rem;
+}

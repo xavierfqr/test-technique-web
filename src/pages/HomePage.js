@@ -13,7 +13,7 @@ function HomePage() {
             <div>Loading...</div>
             :
             error ? 
-                <div>an error occured while fetching data</div>
+                <div>An error occured while fetching data</div>
                 :
                 <EquipmentList></EquipmentList>}
         </div>
