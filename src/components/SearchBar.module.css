@@ -1,13 +1,15 @@
 .container {
   margin: 1rem 0 3rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .container > input {
   border: none;
   outline: none;
   border-bottom: 1px solid black;
-  margin-right: 1rem;
-  padding: 3px;
+  padding: 7px;
   width: 20%;
 }
 
@@ -19,17 +21,21 @@
   outline: none;
   border: none;
   padding: 3px;
-  margin-right: 1rem;
 }
 
 .container button {
   cursor: pointer;
   border: none;
-  background-color: #aaa;
-  padding: 0.4rem;
-  border-radius: 10px;
   transition: 0.3s;
+  margin-right: 1rem;
 }
+
 .container button:hover {
   transform: translate(0, -2px);
+}
+
+.container button > img {
+  object-fit: contain;
+  height: 1.3rem;
+  width: 30px;
 }

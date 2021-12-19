@@ -11,20 +11,19 @@ function SearchBar() {
 
     const handleForm = (e) => {
         e.preventDefault();
-        console.log('what the fuck')
         dispatch(filterEquipments(option, input))
     }
 
     return (
         <form onSubmit={handleForm} className={styles.container}>
             <input onChange={(event) => setInput(event.target.value)} type="text" placeholder='Rechercher un item'/>
+            <button type='submit'><img width={100} height={100} src="search.png"/></button>
             <select onChange={(event) => setOption(event.target.value)}>
                 <option value="name">nom</option>
                 <option value="domain">domaine</option>
                 <option value="brand">marque</option>
                 <option value="niveau">niveau</option>
             </select>
-            <button type='submit'>Rechercher</button>
         </form>
     )
 }

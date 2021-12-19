@@ -26,10 +26,11 @@ function EquipmentPage() {
 
     return (
         <div className={styles.container}>
+            <h1>Détails de l'équipement</h1>
             <section className={styles.infos}>
                 <div>
-                    <p>{equipment.name}</p>
-                    <p>{equipment.domain}</p>
+                    <h2>{equipment.name}</h2>
+                    <i>{equipment.domain}</i>
                 </div>
                 <img alt="equipement" width={100} height={100} src={equipment.photo}/>
             </section>

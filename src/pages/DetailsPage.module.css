@@ -5,6 +5,10 @@
   margin-bottom: 2rem;
 }
 
+.container h1 {
+  margin-bottom: 2rem;
+}
+
 section {
   width: 100%;
   margin-left: auto;
@@ -31,7 +35,7 @@ section > header {
 .infos :first-child {
   display: flex;
   flex-direction: column;
-  align-self: flex-start;
+  justify-content: center;
   text-align: left;
   margin-right: 2rem;
 }

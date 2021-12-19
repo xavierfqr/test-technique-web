@@ -10,6 +10,7 @@ function HomePage() {
     
     return (
         <div>
+            <h1>Liste des équipements</h1>
             {loading ? 
             <div>Loading...</div>
             :
