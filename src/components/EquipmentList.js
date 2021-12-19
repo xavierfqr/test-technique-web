@@ -11,7 +11,7 @@ function EquipmentList() {
     const equipmentKeys = Object.keys(equipments);
 
     const equipmentList = equipmentKeys.map(key => {
-        const {name, domain, nbFaults, photo} = equipments[key]
+        const {name, domain, nbFaults, photo, brand, niveau} = equipments[key]
         let shouldDisplay = false; 
         switch(filterOption) {
             case 'name':
@@ -19,6 +19,12 @@ function EquipmentList() {
                 break;
             case 'domain':
                 shouldDisplay = domain.toLowerCase().includes(filterValue.toLowerCase());
+                break;
+            case 'brand':
+                shouldDisplay = brand.toLowerCase().includes(filterValue.toLowerCase());
+                break;
+            case 'niveau':
+                shouldDisplay = niveau.toLowerCase().includes(filterValue.toLowerCase());
                 break;
             default:
                 shouldDisplay = true;

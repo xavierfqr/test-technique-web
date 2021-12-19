@@ -20,6 +20,8 @@ function SearchBar() {
             <select onChange={(event) => setOption(event.target.value)}>
                 <option value="name">nom</option>
                 <option value="domain">domaine</option>
+                <option value="brand">marque</option>
+                <option value="niveau">niveau</option>
             </select>
             <button type='submit'>Rechercher</button>
         </form>

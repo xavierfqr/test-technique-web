@@ -21,7 +21,7 @@ function EquipmentPage() {
             setCheckpoints(cpKeys.filter(elem => allCheckpoints[elem].equipmentKey === id).map(elem => allCheckpoints[elem]));
         }
         fetchCheckpoints()
-    }, [])
+    }, [id])
 
 
     return (
@@ -31,7 +31,7 @@ function EquipmentPage() {
                     <p>{equipment.name}</p>
                     <p>{equipment.domain}</p>
                 </div>
-                <img width={100} height={100} src={equipment.photo}/>
+                <img alt="equipement" width={100} height={100} src={equipment.photo}/>
             </section>
             <section>
                 <header>Caractéristiques de l'équipement</header>
@@ -96,7 +96,7 @@ function EquipmentPage() {
                         const name = checkpoint.name || '-'
                         const fault = checkpoint.fault || '-'
                         const recommandation = checkpoint.recommandation || '-'
-                        const photo = checkpoint.photo ? <img width={100} height={100} src={checkpoint.photo}></img> : '-';
+                        const photo = checkpoint.photo ? <img alt="checkpoint" width={100} height={100} src={checkpoint.photo}></img> : '-';
 
                         return (
                             <tr key={index}>
