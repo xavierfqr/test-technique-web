@@ -11,11 +11,12 @@ function SearchBar() {
 
     const handleForm = (e) => {
         e.preventDefault();
+        console.log('what the fuck')
         dispatch(filterEquipments(option, input))
     }
 
     return (
-        <form onClick={handleForm} className={styles.container}>
+        <form onSubmit={handleForm} className={styles.container}>
             <input onChange={(event) => setInput(event.target.value)} type="text" placeholder='Rechercher un item'/>
             <select onChange={(event) => setOption(event.target.value)}>
                 <option value="name">nom</option>
