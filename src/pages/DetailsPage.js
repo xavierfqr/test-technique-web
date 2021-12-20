@@ -35,7 +35,7 @@ function EquipmentPage() {
                 <img alt="equipement" width={100} height={100} src={equipment.photo}/>
             </section>
             <section>
-                <header>Caractéristiques de l'équipement</header>
+                <header>Infos de l'équipement</header>
                 <table>
                     <tbody className={styles.characteristics}>
                         <tr>
@@ -49,18 +49,6 @@ function EquipmentPage() {
                         <tr>
                             <td>Local</td>
                             <td>{equipment.local}</td>
-                        </tr>
-                        <tr>
-                            <td>Brand</td>
-                            <td>{equipment.brand}</td>
-                        </tr>
-                        <tr>
-                            <td>Model</td>
-                            <td>{equipment.model}</td>
-                        </tr>
-                        <tr>
-                            <td>Numéro de serie</td>
-                            <td>{equipment.serialNumber || '-'}</td>
                         </tr>
                         <tr>
                             <td>Quantité</td>
@@ -77,6 +65,29 @@ function EquipmentPage() {
                         <tr>
                             <td>Nombre de défauts</td>
                             <td>{equipment.nbFaults}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            <section>
+                <header>Caractéristiques de l'équipement</header>
+                <table>
+                    <tbody className={styles.characteristics}>
+                        <tr>
+                            <td>Domaine</td>
+                            <td>{equipment.domain}</td>
+                        </tr>
+                        <tr>
+                            <td>Marque</td>
+                            <td>{equipment.brand}</td>
+                        </tr>
+                        <tr>
+                            <td>Model</td>
+                            <td>{equipment.model}</td>
+                        </tr>
+                        <tr>
+                            <td>Numéro de serie</td>
+                            <td>{equipment.serialNumber || '-'}</td>
                         </tr>
                     </tbody>
                 </table>
