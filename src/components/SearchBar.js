@@ -17,7 +17,7 @@ function SearchBar() {
     return (
         <form onSubmit={handleForm} className={styles.container}>
             <input onChange={(event) => setInput(event.target.value)} type="text" placeholder='Rechercher un item'/>
-            <button type='submit'><img width={100} height={100} src="search.png"/></button>
+            <button type='submit'><img width={100} height={100} src="search.png" alt="search"/></button>
             <select onChange={(event) => setOption(event.target.value)}>
                 <option value="name">nom</option>
                 <option value="domain">domaine</option>
